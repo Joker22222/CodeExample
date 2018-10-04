@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dosis-Regular.ttf">
+            <string>Dosis-Regular</string>
+        </array>
+        <array key="Dosis-SemiBold.ttf">
+            <string>Dosis-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditarSucursalViewController" customModule="GuiApp" customModuleProvider="target">
+            <connections>
+                <outlet property="tf24Hs" destination="uNN-bC-BK1" id="PWd-QV-7V7"/>
+                <outlet property="tfDireccion" destination="FdN-U2-8eS" id="qu9-gi-GG1"/>
+                <outlet property="tfEnvios" destination="qoy-f5-lj3" id="TGB-Ph-dTO"/>
+                <outlet property="tfHorarios" destination="q8y-0d-7AG" id="CfS-3b-qa8"/>
+                <outlet property="tfTelefonos" destination="2li-89-IVB" id="xvq-vf-Ylo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="O9N-Sc-sB6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8dT-ED-7hP">
+                    <rect key="frame" x="0.0" y="30" width="375" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Información Sucursal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOv-F1-vCo">
+                            <rect key="frame" x="40" y="9" width="152" height="23"/>
+                            <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="18"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTQ-Qg-XQ2">
+                            <rect key="frame" x="333" y="9" width="17" height="22"/>
+                            <state key="normal" image="flecha curva"/>
+                            <connections>
+                                <action selector="tapBack:" destination="-1" eventType="touchUpInside" id="uC8-OO-Ngl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.13725490200000001" green="0.094117647060000004" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="RTQ-Qg-XQ2" firstAttribute="centerY" secondItem="aOv-F1-vCo" secondAttribute="centerY" id="7bd-u6-0pj"/>
+                        <constraint firstAttribute="height" constant="40" id="QAE-Kx-2EW"/>
+                        <constraint firstAttribute="trailing" secondItem="RTQ-Qg-XQ2" secondAttribute="trailing" constant="25" id="Twm-6n-3Dk"/>
+                        <constraint firstItem="aOv-F1-vCo" firstAttribute="leading" secondItem="8dT-ED-7hP" secondAttribute="leading" constant="40" id="ayq-E3-TsB"/>
+                        <constraint firstItem="aOv-F1-vCo" firstAttribute="centerY" secondItem="8dT-ED-7hP" secondAttribute="centerY" id="gHS-9t-EWb"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dirección" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FdN-U2-8eS">
+                    <rect key="frame" x="40" y="100" width="292" height="30"/>
+                    <color key="backgroundColor" red="0.33725490196078434" green="0.29411764705882354" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                            <color key="value" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teléfonos" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2li-89-IVB">
+                    <rect key="frame" x="40" y="140" width="292" height="30"/>
+                    <color key="backgroundColor" red="0.33725490200000002" green="0.29411764709999999" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                            <color key="value" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="24Hs" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uNN-bC-BK1">
+                    <rect key="frame" x="90" y="216" width="52.5" height="30"/>
+                    <color key="backgroundColor" red="0.33725490200000002" green="0.29411764709999999" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                            <color key="value" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Horarios" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q8y-0d-7AG">
+                    <rect key="frame" x="40" y="254" width="292" height="30"/>
+                    <color key="backgroundColor" red="0.33725490200000002" green="0.29411764709999999" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                            <color key="value" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tny-BQ-1SW">
+                    <rect key="frame" x="54" y="402" width="266" height="30"/>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.67843137249999996" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="266" id="5aF-F4-dvo"/>
+                        <constraint firstAttribute="height" constant="30" id="uvr-x4-s6J"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="17"/>
+                    <state key="normal" title="GUARDAR">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="tapGuardar:" destination="-1" eventType="touchUpInside" id="eCL-9S-ekv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmZ-9X-9Xq">
+                    <rect key="frame" x="54" y="440" width="266" height="30"/>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.67843137249999996" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="266" id="9TF-4o-X1j"/>
+                        <constraint firstAttribute="height" constant="30" id="Kgy-BJ-VSW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="17"/>
+                    <state key="normal" title="CANCELAR">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="tapCancel:" destination="-1" eventType="touchUpInside" id="RvJ-AV-y8T"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buv-El-UJT">
+                    <rect key="frame" x="54" y="364" width="266" height="30"/>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.67843137249999996" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="266" id="SSI-Fe-D5L"/>
+                        <constraint firstAttribute="height" constant="30" id="gDZ-sv-4jS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="17"/>
+                    <state key="normal" title="INSERTAR COORDENADAS">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="tapInsertarCoordenadas:" destination="-1" eventType="touchUpInside" id="euv-iu-S7A"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 Hs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTx-nF-u4X">
+                    <rect key="frame" x="40" y="216" width="39" height="25"/>
+                    <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="19"/>
+                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Envios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBd-Jj-UqV">
+                    <rect key="frame" x="40" y="178" width="47" height="25"/>
+                    <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="19"/>
+                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Envios" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qoy-f5-lj3">
+                    <rect key="frame" x="95" y="178" width="63" height="30"/>
+                    <color key="backgroundColor" red="0.33725490200000002" green="0.29411764709999999" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                            <color key="value" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8dT-ED-7hP" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="18Y-bn-N59"/>
+                <constraint firstItem="uNN-bC-BK1" firstAttribute="top" secondItem="qoy-f5-lj3" secondAttribute="bottom" constant="8" id="1Dd-2j-01J"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FdN-U2-8eS" secondAttribute="trailing" constant="43" id="2Ox-Wl-Vpw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2li-89-IVB" secondAttribute="trailing" constant="43" id="4hT-Lk-dJE"/>
+                <constraint firstItem="FdN-U2-8eS" firstAttribute="top" secondItem="8dT-ED-7hP" secondAttribute="bottom" constant="30" id="5O7-8z-R4r"/>
+                <constraint firstItem="fBd-Jj-UqV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="5gU-q8-pdY"/>
+                <constraint firstItem="uNN-bC-BK1" firstAttribute="leading" secondItem="gTx-nF-u4X" secondAttribute="trailing" constant="11" id="C4p-d5-XLN"/>
+                <constraint firstItem="buv-El-UJT" firstAttribute="top" secondItem="q8y-0d-7AG" secondAttribute="bottom" constant="80" id="Ij6-Wq-nf7"/>
+                <constraint firstItem="tny-BQ-1SW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JbA-hh-Rj2"/>
+                <constraint firstItem="OmZ-9X-9Xq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KuS-q0-jWZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q8y-0d-7AG" secondAttribute="trailing" constant="43" id="LLm-Du-SP4"/>
+                <constraint firstItem="fBd-Jj-UqV" firstAttribute="top" secondItem="2li-89-IVB" secondAttribute="bottom" constant="8" id="NAm-VD-Uc2"/>
+                <constraint firstItem="OmZ-9X-9Xq" firstAttribute="top" secondItem="tny-BQ-1SW" secondAttribute="bottom" constant="8" id="NTT-2H-iXf"/>
+                <constraint firstItem="gTx-nF-u4X" firstAttribute="top" secondItem="qoy-f5-lj3" secondAttribute="bottom" constant="8" id="P7b-du-204"/>
+                <constraint firstItem="OmZ-9X-9Xq" firstAttribute="top" secondItem="tny-BQ-1SW" secondAttribute="bottom" constant="8" id="S92-WA-Mia"/>
+                <constraint firstItem="qoy-f5-lj3" firstAttribute="top" secondItem="2li-89-IVB" secondAttribute="bottom" constant="8" id="SaO-xG-iWS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="O9N-Sc-sB6" secondAttribute="trailing" id="Scx-ag-GNf"/>
+                <constraint firstItem="8dT-ED-7hP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="U0r-MQ-OGJ"/>
+                <constraint firstItem="FdN-U2-8eS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="UAy-BK-pNA"/>
+                <constraint firstItem="2li-89-IVB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="Uqj-8Q-wEa"/>
+                <constraint firstItem="q8y-0d-7AG" firstAttribute="top" secondItem="uNN-bC-BK1" secondAttribute="bottom" constant="8" id="Wef-DO-aMj"/>
+                <constraint firstItem="2li-89-IVB" firstAttribute="top" secondItem="FdN-U2-8eS" secondAttribute="bottom" constant="10" id="Z4m-1v-SH1"/>
+                <constraint firstItem="8dT-ED-7hP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="ZJ9-Z0-hJ7"/>
+                <constraint firstItem="O9N-Sc-sB6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bq7-ac-akW"/>
+                <constraint firstItem="q8y-0d-7AG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="nX7-KL-TJt"/>
+                <constraint firstItem="buv-El-UJT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qMc-XE-o3X"/>
+                <constraint firstItem="qoy-f5-lj3" firstAttribute="leading" secondItem="fBd-Jj-UqV" secondAttribute="trailing" constant="8" id="rdl-X4-uLy"/>
+                <constraint firstItem="O9N-Sc-sB6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-20" id="sfx-TI-nGs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="O9N-Sc-sB6" secondAttribute="bottom" id="slv-gM-qcz"/>
+                <constraint firstItem="tny-BQ-1SW" firstAttribute="top" secondItem="buv-El-UJT" secondAttribute="bottom" constant="8" id="wBo-Ay-Gmr"/>
+                <constraint firstItem="gTx-nF-u4X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="y7E-14-gpE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="78.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="360" height="640"/>
+        <image name="flecha curva" width="17" height="15"/>
+    </resources>
+</document>

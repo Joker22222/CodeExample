@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GaleriaViewCollectionViewCell" customModule="GuiApp" customModuleProvider="target">
+            <connections>
+                <outlet property="image" destination="GI7-EB-wCm" id="yV3-qa-aoi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GaleriaViewCollectionViewCell" id="gTV-IL-0wX" customClass="GaleriaViewCollectionViewCell" customModule="GuiApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="210" height="149"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="210" height="149"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GI7-EB-wCm">
+                        <rect key="frame" x="0.5" y="-0.5" width="209" height="149"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="149" id="Cd2-zi-dr0"/>
+                            <constraint firstAttribute="width" constant="209" id="zTR-Pw-vjr"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GI7-EB-wCm" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Jrj-uD-7jz"/>
+                <constraint firstItem="GI7-EB-wCm" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="UQF-3h-DqT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="210" height="137"/>
+            <point key="canvasLocation" x="156" y="176.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

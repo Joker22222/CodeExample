@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.6.0)
+  - AlamofireSwiftyJSON (1.0.1):
+    - Alamofire (~> 4.0)
+    - SwiftyJSON (~> 4.0)
+  - Auth0 (1.9.1):
+    - SimpleKeychain
+  - CropViewController (2.3.6)
+  - SimpleKeychain (0.8.0)
+  - SwiftyJSON (4.0.0)
+  - WormTabStrip (1.0.1)
+
+DEPENDENCIES:
+  - AlamofireSwiftyJSON
+  - Auth0 (~> 1.5)
+  - CropViewController
+  - WormTabStrip (~> 1.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - AlamofireSwiftyJSON
+    - Auth0
+    - CropViewController
+    - SimpleKeychain
+    - SwiftyJSON
+    - WormTabStrip
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  AlamofireSwiftyJSON: ad896b68b586aea5de8ddba641ad3b402b8d5511
+  Auth0: f00227cf5f1d573a8c6eb7e454649ee0c7742bb2
+  CropViewController: e6d4bd512d15a1709e9ddf71fe7d98ffd05dda0f
+  SimpleKeychain: 84c748463eec601dfee5e7990f55cc82edc5488d
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  WormTabStrip: 5f3d8021fb3cc56cb90c1eaf01cdcd6a9fbdf59f
+
+PODFILE CHECKSUM: 27ef4cf86a74e4210d062763611cdce20960a3ed
+
+COCOAPODS: 1.5.0
